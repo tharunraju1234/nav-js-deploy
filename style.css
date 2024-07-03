@@ -1,0 +1,9 @@
+body{
+  margin: 0%;
+  background-color: rgb(226, 22, 22);
+  color: rgb(0, 136, 255);
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 24px;
+  overscroll-behavior: none;
+}
