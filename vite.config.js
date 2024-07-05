@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
+import basicSsl from "@vitejs/plugin-basic-ssl";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/nav-js-deploy/",
-
-  // other configurations...
-})
+    assetsInclude: ["**/*.gltf"],
+    base: "/nav-js-deploy/",
+    publicDir: "static/",
+    server: {
+        host: true,
+    },
+    plugins: [basicSsl()],
+});

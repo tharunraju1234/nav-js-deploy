@@ -35,6 +35,6 @@ echo > .nojekyll
 # for any further committing
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:tharunraju1234/NAV.git main:gh-pages
+git push origin gh-pages:gh-pages
 
 cd -
