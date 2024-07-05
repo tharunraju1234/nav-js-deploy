@@ -88,7 +88,7 @@ window.addEventListener("resize", () => {
 function setupGeometry() {
     // create occluder material
     occluderMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
-    // occluderMaterial.colorWrite = false;
+    occluderMaterial.colorWrite = false;
 
     // create room map
     navigationArea = new THREE.Group();
